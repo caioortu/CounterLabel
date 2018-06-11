@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254B41CA20CEBA1100A0982C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254B41C920CEBA1100A0982C /* LaunchScreen.storyboard */; };
+		254B41CC20CEBA1B00A0982C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 254B41CB20CEBA1B00A0982C /* Main.storyboard */; };
 		25F869E020CEB7E50048DCE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F869DF20CEB7E50048DCE2 /* AppDelegate.swift */; };
 		25F869E220CEB7E50048DCE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F869E120CEB7E50048DCE2 /* ViewController.swift */; };
-		25F869E520CEB7E50048DCE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F869E320CEB7E50048DCE2 /* Main.storyboard */; };
 		25F869E720CEB7E60048DCE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25F869E620CEB7E60048DCE2 /* Assets.xcassets */; };
-		25F869EA20CEB7E60048DCE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25F869E820CEB7E60048DCE2 /* LaunchScreen.storyboard */; };
 		25F869F520CEB7E60048DCE2 /* CounterLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F869F420CEB7E60048DCE2 /* CounterLabelTests.swift */; };
 		25F86A0020CEB7E60048DCE2 /* CounterLabelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F869FF20CEB7E60048DCE2 /* CounterLabelUITests.swift */; };
 /* End PBXBuildFile section */
@@ -34,12 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		254B41C920CEBA1100A0982C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		254B41CB20CEBA1B00A0982C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		25F869DC20CEB7E50048DCE2 /* CounterLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F869DF20CEB7E50048DCE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25F869E120CEB7E50048DCE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		25F869E420CEB7E50048DCE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25F869E620CEB7E60048DCE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		25F869E920CEB7E60048DCE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25F869EB20CEB7E60048DCE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25F869F020CEB7E60048DCE2 /* CounterLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25F869F420CEB7E60048DCE2 /* CounterLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterLabelTests.swift; sourceTree = "<group>"; };
@@ -74,6 +74,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		254B41C720CEB98600A0982C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				254B41C920CEBA1100A0982C /* LaunchScreen.storyboard */,
+				25F869E620CEB7E60048DCE2 /* Assets.xcassets */,
+				25F869EB20CEB7E60048DCE2 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		254B41C820CEB9A000A0982C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				25F869DF20CEB7E50048DCE2 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		25F869D320CEB7E50048DCE2 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +115,10 @@
 		25F869DE20CEB7E50048DCE2 /* CounterLabel */ = {
 			isa = PBXGroup;
 			children = (
-				25F869DF20CEB7E50048DCE2 /* AppDelegate.swift */,
+				254B41C820CEB9A000A0982C /* Application */,
+				254B41C720CEB98600A0982C /* Resources */,
 				25F869E120CEB7E50048DCE2 /* ViewController.swift */,
-				25F869E320CEB7E50048DCE2 /* Main.storyboard */,
-				25F869E620CEB7E60048DCE2 /* Assets.xcassets */,
-				25F869E820CEB7E60048DCE2 /* LaunchScreen.storyboard */,
-				25F869EB20CEB7E60048DCE2 /* Info.plist */,
+				254B41CB20CEBA1B00A0982C /* Main.storyboard */,
 			);
 			path = CounterLabel;
 			sourceTree = "<group>";
@@ -229,9 +245,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25F869EA20CEB7E60048DCE2 /* LaunchScreen.storyboard in Resources */,
+				254B41CC20CEBA1B00A0982C /* Main.storyboard in Resources */,
 				25F869E720CEB7E60048DCE2 /* Assets.xcassets in Resources */,
-				25F869E520CEB7E50048DCE2 /* Main.storyboard in Resources */,
+				254B41CA20CEBA1100A0982C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,25 +307,6 @@
 			targetProxy = 25F869FC20CEB7E60048DCE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		25F869E320CEB7E50048DCE2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25F869E420CEB7E50048DCE2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		25F869E820CEB7E60048DCE2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25F869E920CEB7E60048DCE2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		25F86A0220CEB7E70048DCE2 /* Debug */ = {
@@ -432,7 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C589G3PG8Y;
-				INFOPLIST_FILE = CounterLabel/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CounterLabel/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C589G3PG8Y;
-				INFOPLIST_FILE = CounterLabel/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CounterLabel/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
