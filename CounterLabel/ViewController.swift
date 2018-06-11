@@ -9,15 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var counterLabel: CounterLabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        counterLabel.startValue = 2000.0
+        counterLabel.finalValue = 100.0
+        counterLabel.counterTime = 1.5
+        counterLabel.startCounter()
     }
 
 
