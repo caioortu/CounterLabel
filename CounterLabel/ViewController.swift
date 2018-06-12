@@ -10,16 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var counterLabel: CounterLabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        counterLabel.startValue = 2000.0
-        counterLabel.finalValue = 100.0
-        counterLabel.counterTime = 1.5
-        counterLabel.startCounter()
-    }
+    @IBOutlet weak var counterLabel: CountingLabel!
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        counterLabel.count(from: 2000.0, to: 100.0)
+    }
 
 }
 
